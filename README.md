@@ -22,7 +22,7 @@ text2 = """Citizens!  The government is pleased to announce that the chocolate
            ration has been increased from 50g/day to 25g/day.  Doubleplusgood!"""
 ```
 
-And will yield the merged, highlighted text showing
+And will yield the merged, highlighted text showing (sadly Github is recalcitrant regarding colors in markdown/HTML so you won't see them on this page!)
 
 * Words common to the original and new texts in <span style="color:yellow;">YELLOW.</span>
 * Deleted words from the original text in <span style="color:red;">RED.</span>
