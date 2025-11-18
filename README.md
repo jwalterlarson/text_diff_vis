@@ -5,7 +5,7 @@ This is a small stand-alone code that uses Python Standard Library modules to so
 
 Given two very similar blocks of text, show how the texts differ.
 
-This code was built to solve the problem of detecting, from periodic longitudinal survey of project managers, changes in a project's scope or objectives.  Normally one would go first to some kind of heavy NLP/LLM solution but in this situation the problem was simplified by a basic human characteristic--laziness!  The survey in question was probably viewed by the project managers it targeted as a nuissance and, as such, something best handled with boilerplate copy/paste responses to the free text questions on the survey.  But most people are conscientious enough to modify boilerplate responses when circumstances change.  If one has the _history_ of the responses, one can align and compare the tokens (in this case words) in the responses, and, if there are multiple responses, watch the "mutations" in the text unfold over time.
+This code was built to solve the problem of detecting, from a periodic longitudinal survey of project managers, changes in a project's scope or objectives.  Normally one would go first to some kind of heavy NLP/LLM solution but in this situation the problem was simplified by a basic human characteristic--laziness!  The survey in question was probably viewed by the project managers it targeted as a nuissance, and, as such, something best answered with boilerplate copy/paste responses to the free text questions on the survey.  That said, most people are conscientious enough to modify boilerplate responses when circumstances change.  If one has the _history_ of the responses, one can align them and compare the tokens (in this case words) in the responses, and, if there are multiple responses, watch the "mutations" in the text unfold over time.
 
 The source code here uses
 
@@ -22,7 +22,7 @@ text2 = """Citizens!  The government is pleased to announce that the chocolate
            ration has been increased from 50g/day to 25g/day.  Doubleplusgood!"""
 ```
 
-And will yield the merged, highlighted text showing
+And will yield the merged, highlighted text showing (sadly Github is recalcitrant regarding colors in markdown/HTML so you won't see them on this page!)
 
 * Words common to the original and new texts in <span style="color:yellow;">YELLOW.</span>
 * Deleted words from the original text in <span style="color:red;">RED.</span>
